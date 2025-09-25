@@ -40,9 +40,13 @@ A complete socket-based desktop chat application built with Python and Tkinter, 
 ### How to Run
 1. Ensure Python with Tkinter is installed (included with most Python installations)
 2. Navigate to the `examples/desktop-apps/` directory
-3. Run the application:
+3. Run the GUI application:
    ```bash
    python socket_chat.py
+   ```
+4. Or run the CLI version (for headless environments):
+   ```bash
+   python socket_chat_cli.py
    ```
 
 ### How to Use
