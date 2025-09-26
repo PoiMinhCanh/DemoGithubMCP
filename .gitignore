@@ -25,3 +25,5 @@ MANIFEST
 /tmp/
 *.tmp
 *.temp
+
+node_modules/
