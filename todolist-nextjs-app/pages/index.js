@@ -1,4 +1,6 @@
+
 import { useState } from 'react';
+import styles from '../styles/TodoList.module.css';
 
 export default function Home() {
   const [todos, setTodos] = useState([]);
@@ -16,22 +18,22 @@ export default function Home() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: '2rem auto', fontFamily: 'sans-serif' }}>
-      <h1>Todo List</h1>
-      <form onSubmit={addTodo} style={{ display: 'flex', gap: 8 }}>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Todo List</h1>
+      <form onSubmit={addTodo} className={styles.form}>
         <input
           value={input}
           onChange={e => setInput(e.target.value)}
           placeholder="Add a new todo"
-          style={{ flex: 1 }}
+          className={styles.input}
         />
-        <button type="submit">Add</button>
+        <button type="submit" className={styles.addBtn}>Add</button>
       </form>
-      <ul style={{ padding: 0, listStyle: 'none', marginTop: 20 }}>
+      <ul className={styles.list}>
         {todos.map((todo, idx) => (
-          <li key={idx} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
+          <li key={idx} className={styles.listItem}>
             <span>{todo}</span>
-            <button onClick={() => removeTodo(idx)} style={{ color: 'red' }}>Remove</button>
+            <button onClick={() => removeTodo(idx)} className={styles.removeBtn}>Remove</button>
           </li>
         ))}
       </ul>
