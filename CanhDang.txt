@@ -1,0 +1,13 @@
+Hello Canh Dang! 👋
+
+Greetings from the DemoGithubMCP repository! 
+
+This file was created as part of a demonstration of GitHub MCP capabilities, showcasing how AI assistants can interact with GitHub repositories to:
+- Create new files and content
+- Manage branches and pull requests  
+- Automate development workflows
+
+Hope you're having a great day!
+
+Best regards,
+The GitHub MCP Demo Team
